@@ -70,7 +70,7 @@ nav {
     body {
             background-color: var(--primary-100);
             font-family: 'Aboreto', cursive;
-            background-color: var(--primary-900);
+            
             
     }
 
@@ -147,6 +147,26 @@ nav {
     .hats img {
         width: 250px;
     }
+
+    .truck {
+        display: flex;
+        justify-content: center;
+    }
+    .truck img {
+        width: 300px;
+    }
+    footer {
+        background-color: var(--primary-900);
+        color: var(--primary-100);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        border-top: solid 2px  var(--primary-100);
+        
+    }
+
+    
     
 }
 
