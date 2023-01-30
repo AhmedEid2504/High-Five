@@ -60,7 +60,10 @@ nav {
 
 
 
-#bars {
+#open {
+    display: none;
+}
+#close {
     display: none;
 }
 
@@ -86,6 +89,7 @@ nav {
         letter-spacing: 0.4em;
         padding: 10px;
         color: var(--primary-100);
+        z-index: 3;
     }
 
     .links {
@@ -100,6 +104,7 @@ nav {
         width: 100vw;
         height: 90vh;
         background-color: var(--primary-900);
+        z-index: 0;
     }
 
     .landimg img {
@@ -110,9 +115,54 @@ nav {
         display: block;
     }
     .active {
-        position: fixed;
-        display: none;
+        height: 35vh;
+        padding: 50px;
+        position: absolute;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        background-color: var(--primary-900);
+        transform: translateY(-260px);
+        transition: 0.4s linear;
+        z-index: 1;
     }
+    .show-nav {
+        transform: translateY(0);
+    }
+    a{
+        font-size: xx-large;
+        text-decoration: none;
+    }
+    a:link {
+        color: var(--primary-100);
+        text-decoration: none;
+    }
+
+    /* visited link */
+    a:visited {
+        color: var(--primary-100);
+        text-decoration: none;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: var(--primary-100);
+    }
+
+    /* selected link */
+    a:active {
+        color: var(--primary-100);
+    }
+
+    #open {
+        display:inline;
+        cursor: pointer;
+    }
+    #close {
+        display: none;
+        cursor: pointer;
+    }
+
     .info {
         display: flex;
         flex-direction: column;
@@ -165,7 +215,9 @@ nav {
         border-top: solid 2px  var(--primary-100);
         
     }
+   
 
+    
     
     
 }
