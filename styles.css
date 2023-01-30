@@ -98,13 +98,13 @@ nav {
 
     .landimg {
         width: 100vw;
-        height: fit-content;
+        height: 90vh;
         background-color: var(--primary-900);
     }
 
     .landimg img {
         width: 100%;
-        height: fit-content;
+        height: 90vh;
     }
     #bars {
         display: block;
