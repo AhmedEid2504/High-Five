@@ -100,9 +100,7 @@ a:active {
 #open {
     display: none;
 }
-#close {
-    display: none;
-}
+
 .bwimg{
     height: 80vh;
 }
@@ -156,9 +154,33 @@ footer {
 }
 
 
+@media screen and (max-width: 690px)and (min-width: 450px) {
+    #head {
+        padding: 0;
+        letter-spacing: 0;
+    }
+    a {
+        font-size: large;
+    }
 
+    .logo {
+        letter-spacing: 0;
+        font-size: large;
+    }
 
+}
 
+@media screen and (max-width: 790px)and (min-width: 690px){
+#head {
+    font-size: xx-small;
+    padding: 0;
+    letter-spacing: 0.2em;
+}
+.logo {
+    font-size: large;
+}
+
+}
 
 
 /* small screen */
@@ -167,8 +189,6 @@ footer {
     body {
             background-color: var(--primary-100);
             font-family: 'Aboreto', cursive;
-            
-            
     }
 
     #head{
@@ -212,7 +232,6 @@ footer {
     }
     .active {
         width: 100%;
-        
         position: absolute;
         display: flex;
         gap: 20px;
@@ -231,7 +250,6 @@ footer {
         align-content: center;
         width: 100%;
         height: 10vh;
-        border: 2px var(--primary-300);
     }
     .show-nav {
         transform: translateY(0);
@@ -253,21 +271,19 @@ footer {
 
     /* mouse over link */
     a:hover {
-        color: var(--primary-100);
+        color: var(--primary-300);
     }
 
     /* selected link */
     a:active {
-        color: var(--primary-100);
+        color: var(--primary-300);
     }
 
     #open {
         display:inline;
-        cursor: pointer;
     }
-    #close {
-        display: none;
-        cursor: pointer;
+    button {
+        all: unset;
     }
 
     .info {
