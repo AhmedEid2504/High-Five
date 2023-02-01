@@ -16,7 +16,7 @@
     --primary-600: #069526;
     --primary-700: #017014;
     --primary-800: #004B08;
-    --primary-900: #002602;
+    --primary-900: rgb(0, 38, 2);
 }
 body {
         background-color: var(--primary-100);
@@ -35,20 +35,22 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: relative;
+        position:fixed;
         width: 100vw;
         height: 10vh;
-        background-color: var(--primary-900);
+        background-color:rgba(0, 38, 2, 0.3);
         font-family: 'Aboreto', cursive;
         letter-spacing: 0.3em;
         padding: 10px;
         color: var(--primary-100);
+        z-index: 4;
     }
 
-.logo {
+.logo a{
     padding-left: 40px;
     letter-spacing: 0.4em;
-    font-size: x-large;
+    font-weight: bolder;
+    font-size: xx-large;
 }
 .links {
     display: flex;
@@ -57,7 +59,6 @@ body {
 }
 a {
     font-size: x-large;
-    text-decoration: none;
 }
 
 a:link {
@@ -72,7 +73,7 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
+nav a:hover {
     color: var(--primary-300);
 }
 
@@ -87,7 +88,7 @@ a:active {
 .landimg {
     background-image: url(images/mainbg.jpg);
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-color: var(--primary-900);
     background-size: cover;
 }
@@ -102,12 +103,60 @@ a:active {
 }
 
 .bwimg{
-    height: 80vh;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bwimg img {
     width: 100%;
-    height: 80vh;
+    height: 100%;
 }
+
+.buynow {
+    background-image: linear-gradient(90deg, #1f773b, #25753c);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+.buybg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/gbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+}
+.buybtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:65px ;
+    left: 10px;
+    width: 470px;
+    height: 5em;
+    transition: all 0.3s;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 20px 30px 10px rgba(0, 0, 0, 0.5);
+}
+.buynow a:hover {
+    background-color: rgba(29, 75, 28, 0.5);
+}
+.buynow a:visited {
+    background-color: rgba(29, 75, 28, 0.5);
+    box-shadow: 10px 20px 30px 10px rgba(0, 0, 0, 0);
+}
+
+
 
 .info {
     display: flex;
@@ -257,27 +306,7 @@ footer {
     a{
         font-size: x-large;
         text-decoration: none;
-    }
-    a:link {
-        color: var(--primary-100);
-        text-decoration: none;
-    }
-
-    /* visited link */
-    a:visited {
-        color: var(--primary-100);
-        text-decoration: none;
-    }
-
-    /* mouse over link */
-    a:hover {
-        color: var(--primary-300);
-    }
-
-    /* selected link */
-    a:active {
-        color: var(--primary-300);
-    }
+    }  
 
     #open {
         display:inline;
