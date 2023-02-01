@@ -34,18 +34,18 @@ body {
 
 #head{
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position:fixed;
-        width: 100vw;
-        height: 10vh;
-        background-color:var(--black);
-        font-family: 'Aboreto', cursive;
-        letter-spacing: 0.3em;
-        padding: 10px;
-        color: var(--primary-100);
-        z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+    width: 100vw;
+    height: 10vh;
+    background-color:var(--black);
+    font-family: 'Aboreto', cursive;
+    letter-spacing: 0.3em;
+    padding: 10px;
+    color: var(--primary-100);
+    z-index: 4;
     }
 
 .logo a{
@@ -89,13 +89,13 @@ a:active {
 
 .land {
     width: 100vw;
-    height: 100vh;
+    height: 700px;
     background-color:#0f0f0f ;
     background-size: cover;
 }
 .part{
     width: 25%;
-    height: 100vh;
+    height: 700px;
 }
 
 .a {
@@ -104,7 +104,8 @@ a:active {
     background-color: var(--primary-100);
 }
 .fontw {
-    top: 50%;
+    padding:50px 0;
+    top: 40%;
     position: relative;
     font-weight: 400;
     font-size: 100px;
@@ -128,6 +129,7 @@ a:active {
     left: 50%;
 }
 .fontb {
+    
     top: 45%;
     position: relative;
     font-weight: 400;
@@ -360,20 +362,72 @@ footer {
         font-size: x-large;
     }
 
-
-    .landimg {
-        background-image: none;
+    .land {
+        display: flex;
+        flex-direction: column;
         width: 100vw;
         height: 90vh;
-        background-color: var(--primary-900);
-        z-index: 0;
+        background-color: #0f0f0f;
+        background-size: cover;
     }
 
-    .landimg img {
-        display: block;
-        width: 100%;
-        height: 90vh;
+    .part {
+        width: 100vw;
+        height: 25%;
     }
+
+    .a {
+        position: inherit;
+        left: 0;
+        background-color: var(--primary-100);
+    }
+
+    .fontw {
+        top: 0;
+        position: relative;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 185px;
+        text-align: center;
+        color: #0f0f0f;
+        transform: rotate(0);
+    }
+
+    .b {
+        position: inherit;
+        left: 0;
+        background-image: url(../images/bg2.jpg);
+        background-size: cover;
+        background-position: 0;
+    }
+
+    .c {
+        background-color: #0f0f0f;
+        justify-content: center;
+        align-items: center;
+        position: inherit;
+        left: 0;
+    }
+
+    .fontb {
+        top: 0;
+        position: relative;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 185px;
+        text-align: center;
+        color: #FFFFFF;
+        transform: rotate(0);
+    }
+
+    .d {
+        position: inherit;
+        left: 0;
+        background-image: url(../images/whitehat.jpg);
+        background-size: cover;
+        background-position:0;
+    }
+
 
     #bars {
         display: block;
@@ -387,7 +441,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--primary-900);
+        background-color: var(--black);
         transform: translateY(-270px);
         transition: 0.4s linear;
         z-index: 1;
