@@ -205,16 +205,39 @@ footer {
 
 @media screen and (max-width: 690px)and (min-width: 450px) {
     #head {
-        padding: 0;
-        letter-spacing: 0;
+        font-size: xx-small;
+        padding:50px 0;
+        letter-spacing: 0em;
     }
-    a {
+    #head a {
         font-size: large;
+    }
+    
+    .logo a {
+        letter-spacing: 0;
+        font-size: x-large;
     }
 
-    .logo {
-        letter-spacing: 0;
-        font-size: large;
+    .buynow {
+        width: 100%;
+        height: 300px;
+    }
+
+    .buybg {
+        position: relative;
+        top: 10px;
+        background-size: contain;
+        width: 400px;
+        height: 300px;
+    }
+
+    .buybtn {
+        bottom: 55px;
+        left: 5px;
+        width: 230px;
+        height: 2.3em;
+        font-weight:300;
+        box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.5);
     }
 
 }
@@ -222,12 +245,34 @@ footer {
 @media screen and (max-width: 790px)and (min-width: 690px){
 #head {
     font-size: xx-small;
-    padding: 0;
+    padding: 50px 0;
     letter-spacing: 0.2em;
 }
 .logo {
     font-size: large;
 }
+
+    .buynow {
+        width: 100%;
+        height: 400px;
+    }
+
+    .buybg {
+        position: relative;
+        top: 10px;
+        background-size: cover;
+        width: 600px;
+        height: 400px;
+    }
+
+    .buybtn {
+        bottom: 55px;
+        left: 5px;
+        width: 350px;
+        height: 3.5em;
+        font-weight:300;
+        box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.5);
+    }
 
 }
 
@@ -258,11 +303,11 @@ footer {
     .links {
         display: none;
     }
-    .logo {
-        padding: 0;
-        letter-spacing: 0;
+    .logo a{
+        padding: 0 10px;
+        letter-spacing: 0.3em;
         font-weight: bold;
-        font-size: large;
+        font-size: x-large;
     }
     
 
@@ -359,11 +404,6 @@ footer {
     }
 
     .buynow {
-        background-image: linear-gradient(90deg, #1f773b, #25753c);
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: 200px;
     }
@@ -371,28 +411,17 @@ footer {
     .buybg {
         position: relative;
         top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(images/gbg.jpg);
         background-size: contain;
-        background-repeat: no-repeat;
         width: 250px;
         height: 200px;
     }
 
     .buybtn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
         bottom: 40px;
         left: 2px;
         width: 150px;
         height: 1.5em;
-        transition: all 0.3s;
         font-weight:300;
-        background-color: rgba(255, 255, 255, 0.2);
         box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.5);
     }
 
