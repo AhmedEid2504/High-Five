@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary: Charming Nature */
+    --primary-100: #F2FFF9;
+    --primary-200: #BBFEDA;
+    --primary-300: #81F6B0;
+    --primary-400: #47E27C;
+    --primary-500: #13BA42;
+    --primary-600: #069526;
+    --primary-700: #017014;
+    --primary-800: #004B08;
+    --primary-900: rgb(0, 38, 2);
+}
+body {
+        background-color: var(--primary-100);
+        font-family: 'Aboreto', cursive;
+}
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: var(--primary-100);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-900);
+}
+
+#head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        width: 100vw;
+        height: 10vh;
+        background-color:rgba(0, 38, 2, 0.3);
+        font-family: 'Aboreto', cursive;
+        letter-spacing: 0.3em;
+        padding: 10px;
+        color: var(--primary-100);
+        z-index: 4;
+    }
+
+.logo a{
+    padding-left: 40px;
+    letter-spacing: 0.4em;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.links {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+a {
+    font-size: x-large;
+}
+
+a:link {
+    color: var(--primary-100);
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: var(--primary-100);
+    text-decoration: none;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: var(--primary-300);
+}
+
+/* selected link */
+a:active {
+    color: var(--primary-100);
+}
+.active {
+    display: none;  
+}
+
+.landimg {
+    background-image: url(images/mainbg.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-900);
+    background-size: cover;
+}
+
+.landimg img {
+    width: fit-content;
+    display: none;
+}
+
+#open {
+    display: none;
+}
+
+.bwimg{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bwimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.buynow {
+    background-image: linear-gradient(90deg, #1f773b, #25753c);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+.buybg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/gbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+}
+.buybtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:65px ;
+    left: 10px;
+    width: 470px;
+    height: 5em;
+    transition: all 0.3s;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 20px 30px 10px rgba(0, 0, 0, 0.5);
+}
+.buynow a:hover {
+    background-color: rgba(29, 75, 28, 0.5);
+}
+.buynow a:visited {
+    background-color: rgba(29, 75, 28, 0.5);
+    box-shadow: 10px 20px 30px 10px rgba(0, 0, 0, 0);
+}
+
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    color: var(--primary-100);
+    overflow-x: hidden;
+    background-image:linear-gradient(90deg, var(--primary-400), var(--primary-900));
+    width: 100vw;
+    height: 30vh;
+    letter-spacing: 0.3em;
+    
+}
+.info h1 {
+    padding:15px 20px;
+}
+.light {
+    color: black;
+    background-image: none;
+    background-color: var(--primary-100);
+}
+
+.truck {
+    display: flex;
+    justify-content: center;
+}
+
+.truck img {
+    width: 300px;
+}
+
+footer {
+    background-color: var(--primary-900);
+    color: var(--primary-100);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-top: solid 2px var(--primary-300);
+
+}
+
+
+@media screen and (max-width: 690px)and (min-width: 450px) {
+    #head {
+        padding: 0;
+        letter-spacing: 0;
+    }
+    a {
+        font-size: large;
+    }
+
+    .logo {
+        letter-spacing: 0;
+        font-size: large;
+    }
+
+}
+
+@media screen and (max-width: 790px)and (min-width: 690px){
+#head {
+    font-size: xx-small;
+    padding: 0;
+    letter-spacing: 0.2em;
+}
+.logo {
+    font-size: large;
+}
+
+}
+
+
+/* small screen */
+
+@media screen and (max-width: 450px) {
+    body {
+            background-color: var(--primary-100);
+            font-family: 'Aboreto', cursive;
+    }
+
+    #head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        width: 100vw;
+        height: 10vh;
+        background-color: var(--primary-900);
+        font-family: 'Aboreto', cursive;
+        letter-spacing: 0.4em;
+        padding: 10px;
+        color: var(--primary-100);
+        z-index: 3;
+    }
+
+    .links {
+        display: none;
+    }
+    .logo {
+        font-size: larger;
+    }
+    
+
+    .landimg {
+        background-image: none;
+        width: 100vw;
+        height: 90vh;
+        background-color: var(--primary-900);
+        z-index: 0;
+    }
+
+    .landimg img {
+        display: block;
+        width: 100%;
+        height: 90vh;
+    }
+    #bars {
+        display: block;
+    }
+    .active {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-900);
+        transform: translateY(-270px);
+        transition: 0.4s linear;
+        z-index: 1;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 10vh;
+    }
+    .show-nav {
+        transform: translateY(0);
+    }
+    a{
+        font-size: x-large;
+        text-decoration: none;
+    }  
+
+    #open {
+        display:inline;
+    }
+    button {
+        all: unset;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        color: var(--primary-100);
+        overflow-x: hidden;
+        background-color: var(--primary-900);
+        width: 100vw;
+        height: 30vh;
+        letter-spacing: 0.3em;
+        
+    }
+    .info h1 {
+        padding:15px 20px;
+    }
+    .light {
+        color: black;
+        background-color: var(--primary-100);
+    }
+    .bwimg {
+        height: 100%;
+    }
+
+    .bwimg img {
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .truck {
+        display: flex;
+        justify-content: center;
+    }
+    .truck img {
+        width: 300px;
+    }
+    footer {
+        background-color: var(--primary-900);
+        color: var(--primary-100);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        border-top: solid 2px  var(--primary-100);
+        
+    }
+}
+
+
+
+
+
+
