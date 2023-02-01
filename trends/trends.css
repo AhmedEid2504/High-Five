@@ -252,29 +252,76 @@ footer {
 
 @media screen and (max-width: 690px)and (min-width: 450px) {
     #head {
-        padding: 0;
-        letter-spacing: 0;
+        font-size: xx-small;
+        padding: 35px 0;
+        letter-spacing: 0em;
     }
-    a {
+
+    #head a {
         font-size: large;
+    }
+
+    .logo a {
+        letter-spacing: 0;
+        font-size: x-large;
+    }
+
+    .buynow {
+        width: 100%;
+        height: 300px;
+    }
+
+    .buybg {
+        position: relative;
+        top: 10px;
+        background-size: contain;
+        width: 400px;
+        height: 300px;
+    }
+
+    .buybtn {
+        bottom: 55px;
+        left: 5px;
+        width: 230px;
+        height: 2.3em;
+        font-weight: 300;
+        box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+@media screen and (max-width: 790px)and (min-width: 690px) {
+    #head {
+        font-size: xx-small;
+        padding: 38px 0;
+        letter-spacing: 0.2em;
     }
 
     .logo {
-        letter-spacing: 0;
         font-size: large;
     }
 
-}
+    .buynow {
+        width: 100%;
+        height: 400px;
+    }
 
-@media screen and (max-width: 790px)and (min-width: 690px){
-#head {
-    font-size: xx-small;
-    padding: 0;
-    letter-spacing: 0.2em;
-}
-.logo {
-    font-size: large;
-}
+    .buybg {
+        position: relative;
+        top: 10px;
+        background-size: cover;
+        width: 600px;
+        height: 400px;
+    }
+
+    .buybtn {
+        bottom: 55px;
+        left: 5px;
+        width: 350px;
+        height: 3.5em;
+        font-weight: 300;
+        box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.5);
+    }
 
 }
 
@@ -283,18 +330,18 @@ footer {
 
 @media screen and (max-width: 450px) {
     body {
-            background-color: var(--primary-100);
-            font-family: 'Aboreto', cursive;
+        background-color: var(--primary-100);
+        font-family: 'Aboreto', cursive;
     }
 
-    #head{
+    #head {
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: sticky;
         width: 100vw;
         height: 10vh;
-        background-color: var(--primary-900);
+        background-color: var(--black);
         font-family: 'Aboreto', cursive;
         letter-spacing: 0.4em;
         padding: 10px;
@@ -305,10 +352,14 @@ footer {
     .links {
         display: none;
     }
-    .logo {
-        font-size: larger;
+
+    .logo a {
+        padding: 0 10px;
+        letter-spacing: 0.3em;
+        font-weight: bold;
+        font-size: x-large;
     }
-    
+
 
     .landimg {
         background-image: none;
@@ -323,9 +374,11 @@ footer {
         width: 100%;
         height: 90vh;
     }
+
     #bars {
         display: block;
     }
+
     .active {
         width: 100%;
         position: absolute;
@@ -339,6 +392,7 @@ footer {
         transition: 0.4s linear;
         z-index: 1;
     }
+
     .row {
         display: flex;
         justify-content: center;
@@ -347,17 +401,20 @@ footer {
         width: 100%;
         height: 10vh;
     }
+
     .show-nav {
         transform: translateY(0);
     }
-    a{
+
+    a {
         font-size: x-large;
         text-decoration: none;
-    }  
+    }
 
     #open {
-        display:inline;
+        display: inline;
     }
+
     button {
         all: unset;
     }
@@ -375,15 +432,18 @@ footer {
         width: 100vw;
         height: 30vh;
         letter-spacing: 0.3em;
-        
+
     }
+
     .info h1 {
-        padding:15px 20px;
+        padding: 15px 20px;
     }
+
     .light {
         color: black;
         background-color: var(--primary-100);
     }
+
     .bwimg {
         height: 100%;
     }
@@ -392,15 +452,39 @@ footer {
         width: 100%;
         height: 100%;
     }
-    
+
 
     .truck {
         display: flex;
         justify-content: center;
     }
+
     .truck img {
         width: 300px;
     }
+
+    .buynow {
+        width: 100%;
+        height: 200px;
+    }
+
+    .buybg {
+        position: relative;
+        top: 10px;
+        background-size: contain;
+        width: 250px;
+        height: 200px;
+    }
+
+    .buybtn {
+        bottom: 40px;
+        left: 2px;
+        width: 150px;
+        height: 1.5em;
+        font-weight: 300;
+        box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.5);
+    }
+
     footer {
         background-color: var(--primary-900);
         color: var(--primary-100);
@@ -408,11 +492,10 @@ footer {
         justify-content: space-around;
         align-items: center;
         padding: 15px;
-        border-top: solid 2px  var(--primary-100);
-        
+        border-top: solid 2px var(--primary-100);
+
     }
 }
-
 
 
 
