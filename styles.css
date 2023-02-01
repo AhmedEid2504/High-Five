@@ -206,7 +206,7 @@ footer {
 @media screen and (max-width: 690px)and (min-width: 450px) {
     #head {
         font-size: xx-small;
-        padding:50px 0;
+        padding:35px 0;
         letter-spacing: 0em;
     }
     #head a {
@@ -245,7 +245,7 @@ footer {
 @media screen and (max-width: 790px)and (min-width: 690px){
 #head {
     font-size: xx-small;
-    padding: 50px 0;
+    padding: 38px 0;
     letter-spacing: 0.2em;
 }
 .logo {
