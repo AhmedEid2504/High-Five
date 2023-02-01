@@ -17,9 +17,10 @@
     --primary-700: #017014;
     --primary-800: #004B08;
     --primary-900: rgb(0, 38, 2);
+    --black:#0f0f0f;
 }
 body {
-        background-color: var(--primary-100);
+        background-color:var(--black);
         font-family: 'Aboreto', cursive;
 }
 ::-webkit-scrollbar {
@@ -32,13 +33,14 @@ body {
 }
 
 #head{
+
         display: flex;
         align-items: center;
         justify-content: space-between;
         position:fixed;
         width: 100vw;
         height: 10vh;
-        background-color:rgba(0, 38, 2, 0.3);
+        background-color:var(--black);
         font-family: 'Aboreto', cursive;
         letter-spacing: 0.3em;
         padding: 10px;
@@ -85,17 +87,62 @@ a:active {
     display: none;  
 }
 
-.landimg {
-    background-image: url(images/mainbg.jpg);
+.land {
     width: 100vw;
     height: 100vh;
-    background-color: var(--primary-900);
+    background-color:#0f0f0f ;
     background-size: cover;
 }
+.part{
+    width: 25%;
+    height: 100vh;
+}
 
-.landimg img {
-    width: fit-content;
-    display: none;
+.a {
+    position: absolute;
+    left: 0%;
+    background-color: var(--primary-100);
+}
+.fontw {
+    top: 50%;
+    position: relative;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 185px;
+    text-align: center;
+    color: #0f0f0f;
+    transform: rotate(-90deg);
+}
+.b {
+    position: absolute;
+    left: 25%;
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.c {
+    background-color: #0f0f0f;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+}
+.fontb {
+    top: 45%;
+    position: relative;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 185px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
+.d {
+    position: absolute;
+    left: 75%;
+    background-image: url(../images/whitehat.jpg);
+    background-size: cover;
+    background-position: 50%;
 }
 
 #open {
@@ -128,7 +175,7 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/gbg.jpg);
+    background-image: url(../images/gbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 800px;
