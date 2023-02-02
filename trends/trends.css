@@ -22,6 +22,7 @@
 body {
         background-color:var(--black);
         font-family: 'Aboreto', cursive;
+        
 }
 ::-webkit-scrollbar {
     width: 2px;
@@ -33,17 +34,16 @@ body {
 }
 
 #head{
-
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     position:relative;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     background-color:var(--black);
     font-family: 'Aboreto', cursive;
     letter-spacing: 0.3em;
-    padding: 10px;
     color: var(--primary-100);
     z-index: 4;
     }
@@ -88,28 +88,29 @@ a:active {
 }
 
 .land {
-    width: 100vw;
-    height: 700px;
+    width: 100%;
+    height: 850px;
     background-color:#0f0f0f ;
     background-size: cover;
 }
 .part{
     width: 25%;
-    height: 700px;
+    height: 850px;
 }
 
 .a {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 0%;
     background-color: var(--primary-100);
 }
 .fontw {
-    padding:50px 0;
-    top: 40%;
     position: relative;
     font-weight: 400;
     font-size: 100px;
-    line-height: 185px;
+    line-height: 100px;
     text-align: center;
     color: #0f0f0f;
     transform: rotate(-90deg);
@@ -122,6 +123,9 @@ a:active {
     background-position: 50%;
 }
 .c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0f0f0f;
     justify-content: center;
     align-items: center;
@@ -129,12 +133,10 @@ a:active {
     left: 50%;
 }
 .fontb {
-    
-    top: 45%;
     position: relative;
     font-weight: 400;
     font-size: 100px;
-    line-height: 185px;
+    line-height: 100px;
     text-align: center;
     color: #FFFFFF;
     transform: rotate(-90deg);
@@ -150,6 +152,70 @@ a:active {
 #open {
     display: none;
 }
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.trendsbtn {
+    color: var(--black);
+    position: absolute;
+    background:none;
+    font-size: 1.5rem;
+    top: 25%;
+    z-index: 3;
+}
+button {
+    all: unset;
+}
+.prev {
+    left: 1%;
+}
+.next {
+    left: 96%;
+}
+.trend {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+.trend[active] {
+    opacity: 1;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.main img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.content {
+    width: 100%;
+    height: 100vh;
+}
+.content img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
 
 .bwimg{
     overflow: hidden;
@@ -217,7 +283,7 @@ a:active {
     color: var(--primary-100);
     overflow-x: hidden;
     background-image:linear-gradient(90deg, var(--primary-400), var(--primary-900));
-    width: 100vw;
+    width: 100%;
     height: 30vh;
     letter-spacing: 0.3em;
     
@@ -231,14 +297,6 @@ a:active {
     background-color: var(--primary-100);
 }
 
-.truck {
-    display: flex;
-    justify-content: center;
-}
-
-.truck img {
-    width: 300px;
-}
 
 footer {
     background-color: var(--primary-900);

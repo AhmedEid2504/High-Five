@@ -14,6 +14,14 @@ open.addEventListener('click', () => {
     }
 })
 
+
+//trends 
+var i = 0;
+var trends = [];
+var time = 3000;
+
+//trends list 
+trends[0] = '.sunmain'
     
 
 
