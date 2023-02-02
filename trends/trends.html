@@ -33,18 +33,35 @@
         <div class="part d"></div>
     </section>
     
-    <section id="trends" class="carousel">
-        <button class="trendsbtn prev"><i class="fas fa-2x fa-chevron-left"></i></button>
-        <button class="trendsbtn next"><i class="fas fa-2x fa-chevron-right"></i></button></button>
+    <section id="trends" class="carousel" data-carousel>
+        <button class="trendsbtn prev" data-carousel-button="prev"><i class="fas fa-2x fa-chevron-left"></i></button>
+        <button class="trendsbtn next" data-carousel-button="next"><i class="fas fa-2x fa-chevron-right"></i></button></button>
 
-        <ul>
-            <li class="trend" active>
+        <ul data-slides>
+            <li class="trend"data-active="true">
                 <div class="sun">
+                    <div class="main sunmain">
+                        <img src="../images/sunhat1.jpg" alt="">
+                        <div class="trendname">
+                            <h1 class="top">SNAS</h1>
+                            <h1 class="bottom">UHT</h1>
+                        </div>
+                    </div>
+                    <div class="content suncontent">
+                        <img src="../images/sunhat2.jpg" alt="">
+                    </div>
+                    
+                </div>
+                
+            </li>
+
+            <li class="trend">
+                <div class="sun" >
                     <div class="main sunmain">
                         <img src="../images/sunhat1.jpg" alt="">
                     </div>
                     <div class="content suncontent">
-                        <img src="../images/sunhat2.jpg" alt="">
+                        <img src="../images/sunhat3.jpg" alt="">
                     </div>
                 </div>
             </li>
@@ -55,18 +72,7 @@
                         <img src="../images/sunhat1.jpg" alt="">
                     </div>
                     <div class="content suncontent">
-                        <img src="../images/sunhat2.jpg" alt="">
-                    </div>
-                </div>
-            </li>
-
-            <li class="trend">
-                <div class="sun">
-                    <div class="main sunmain">
-                        <img src="../images/sunhat1.jpg" alt="">
-                    </div>
-                    <div class="content suncontent">
-                        <img src="../images/sunhat2.jpg" alt="">
+                        <img src="../images/sunhat4.jpg" alt="">
                     </div>
                 </div>
             </li>

@@ -169,6 +169,12 @@ ul {
     font-size: 1.5rem;
     top: 25%;
     z-index: 3;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.trendsbtn:hover {
+    color: var(--primary-100);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 button {
     all: unset;
@@ -183,14 +189,49 @@ button {
     position: absolute;
     inset: 0;
     opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay:200ms ;
 }
-.trend[active] {
+.trend[data-active] {
     opacity: 1;
+    z-index: 1;
+    transition-delay:0 ;
 }
 
 .main{
+    position: relative;
     width: 100%;
     height: 100vh;
+}
+.trendname {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:absolute;
+    z-index: 4;
+    top: 50%;
+    left: 10%;
+    letter-spacing: 4em;
+    color: var(--primary-100);
+    transition: 0.3s linear;
+    transform: translateY(0px);
+}
+.bottom {
+    transition: 0.3s linear;
+    transform: translateY(-27px);
+}
+.top {
+    transition: 0.3s linear;
+    
+}
+.top :hover {
+    transform: translateY(-27px);
+}
+
+.trendname :hover {
+    transform: translateY(27px);
 }
 .main img {
     display: block;
@@ -210,6 +251,7 @@ button {
     object-fit: cover;
     object-position: center;
 }
+
 
 
 
@@ -326,6 +368,10 @@ footer {
         font-size: x-large;
     }
 
+    .next {
+            left: 92%;
+    }
+
     .buynow {
         width: 100%;
         height: 300px;
@@ -360,6 +406,12 @@ footer {
     .logo {
         font-size: large;
     }
+
+         .next {
+             left: 95%;
+         }
+
+    
 
     .buynow {
         width: 100%;
@@ -399,7 +451,7 @@ footer {
         align-items: center;
         justify-content: space-between;
         position: sticky;
-        width: 100vw;
+        width: 100%;
         height: 10vh;
         background-color: var(--black);
         font-family: 'Aboreto', cursive;
@@ -423,14 +475,14 @@ footer {
     .land {
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         height: 90vh;
         background-color: #0f0f0f;
         background-size: cover;
     }
 
     .part {
-        width: 100vw;
+        width: 100%;
         height: 25%;
     }
 
@@ -541,7 +593,7 @@ footer {
         color: var(--primary-100);
         overflow-x: hidden;
         background-color: var(--primary-900);
-        width: 100vw;
+        width: 100%;
         height: 30vh;
         letter-spacing: 0.3em;
 
@@ -556,24 +608,88 @@ footer {
         background-color: var(--primary-100);
     }
 
-    .bwimg {
-        height: 100%;
-    }
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 200vh;
+        }
+    
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    
+        .trendsbtn {
+            color: var(--black);
+            position: absolute;
+            background: none;
+            font-size: 1.5rem;
+            top: 25%;
+            z-index: 3;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+    
+        .trendsbtn:hover {
+            color: var(--primary-100);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    
+        button {
+            all: unset;
+        }
+    
+        .prev {
+            left: 2%;
+        }
+    
+        .next {
+            left: 90%;
+        }
+    
+        .trend {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: 200ms opacity ease-in-out;
+            transition-delay: 200ms;
+        }
+    
+        .trend[data-active] {
+            opacity: 1;
+            z-index: 1;
+            transition-delay: 0;
+        }
+    
+        .main {
+            width: 100%;
+            height: 100vh;
+        }
+    
+        .main img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    
+        .content {
+            width: 100%;
+            height: 100vh;
+        }
+    
+        .content img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
 
-    .bwimg img {
-        width: 100%;
-        height: 100%;
-    }
 
 
-    .truck {
-        display: flex;
-        justify-content: center;
-    }
-
-    .truck img {
-        width: 300px;
-    }
 
     .buynow {
         width: 100%;
