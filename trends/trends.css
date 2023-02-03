@@ -377,13 +377,13 @@ button {
 
 
 footer {
-    background-color: var(--primary-900);
+    background-color: var(--black);
     color: var(--primary-100);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    border-top: solid 2px var(--primary-300);
+    border-top: solid 2px var(--primary-100);
 
 }
 
@@ -841,7 +841,7 @@ footer {
     }
 
     footer {
-        background-color: var(--primary-900);
+        background-color: var(--black);
         color: var(--primary-100);
         display: flex;
         justify-content: space-around;
