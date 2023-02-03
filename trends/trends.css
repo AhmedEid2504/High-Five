@@ -245,6 +245,10 @@ button {
     top: 40%;
     left: 35%;
 }
+.B {
+    top: 30%;
+    left: 10%;
+}
 #chr {
     position:absolute;
     top: 1.1em;
@@ -404,6 +408,21 @@ footer {
             left: 92%;
     }
     
+    .trendslogo a{
+        font-size:1em;
+        letter-spacing: 1px;
+        
+    }
+    .trendsmidlogo{
+        
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+    }
+
+
     .trendname {
         display: flex;
         align-items: center;
@@ -600,6 +619,11 @@ footer {
         transform: translateY(0px);
         font-size:small;
     }
+
+    .C {
+        top: 40%;
+        left: 80px;
+    }
     #sunn{
         position: absolute;
         top: 26px;
@@ -611,12 +635,16 @@ footer {
     }
     .trendslogo a{
         font-size:large;
+        letter-spacing: 0;
+        padding: 0;
     }
     .trendsmidlogo {
+        padding: 0;
+        letter-spacing: 1px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 
 
@@ -702,9 +730,9 @@ footer {
         }
     
         .trendsbtn {
-            color: var(--black);
+            color: var(--primary-100);
             position: absolute;
-            background: none;
+            background-color: rgba(0, 0, 0, 0.5);
             font-size: 1.5rem;
             top: 25%;
             z-index: 3;
@@ -713,8 +741,8 @@ footer {
         }
     
         .trendsbtn:hover {
-            color: var(--primary-100);
-            background-color: rgba(0, 0, 0, 0.5);
+            color: var(--black);
+            
         }
     
         button {
@@ -755,11 +783,14 @@ footer {
             object-fit: cover;
             object-position: center;
         }
-    
+        
+
+
         .content {
             width: 100%;
             height: 100vh;
         }
+        
     
         .content img {
             display: block;
@@ -768,7 +799,22 @@ footer {
             object-fit: cover;
             object-position: center;
         }
-
+        .bucketcontent{
+            background-image: url(../images/buckethats3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .bucketcontent img{
+            display: none;
+        }
+        .suncontent{
+            background-image: url(../images/sunhat5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .suncontent img{
+            display: none;
+        }
 
 
 
@@ -806,6 +852,48 @@ footer {
     }
 }
 
+@media screen and (max-width: 350px) {
+    .trendslogo a{
+        font-size: small;
+    }
+    .trendsmidlogo {
+        font-size: x-small;
+    }
+    .trendname {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            z-index: 4;
+            top: 40%;
+            left: 80px;
+            letter-spacing: 4em;
+            color: var(--primary-100);
+            transition: 0.3s linear;
+            transform: translateY(0px);
+            font-size: x-small;
+        }
+        .B {
+            top: 60%;
+            left: 5%;
+        }
+    
+        #sunn {
+            position: absolute;
+            top: 28px;
+        }
+        .s {
+            top: 60%;
+            left: 60px;
+        }
+    
+        #chr {
+            position: absolute;
+            top: 1.8em;
+            left: 1.7em;
+        }
+}
 
 
 
