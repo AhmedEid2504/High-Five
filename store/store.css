@@ -368,22 +368,17 @@ footer {
 
 @media screen and (max-height: 350px) {
 
-    #head{
-        
-        position:relative;
-       
-    }
 
     .land {
 
-            height: 90vh;
+            height: 100vh;
             background-color: #0f0f0f;
         }
 
     .rightmain {
         background-image: url(images/shop2.jpg);
         background-size: cover;
-        background-position:top;
+        background-position:0 -30px;
         background-repeat: no-repeat;
         background-color: #F2FFF9;
         position: absolute;
@@ -395,13 +390,11 @@ footer {
     }
 
         .textmain {
-           
             color: var(--primary-100);
             position: absolute;
-            top: 20%;
+            top: 35%;
             left: 0%;
-            
-            
+ 
         }
     
         h1,
@@ -412,19 +405,21 @@ footer {
         .a {
             position: relative;
             top: 0px;
-
+            font-size: 30px;
         }
     
         .b {
             position: relative;
             top: 0px;
-           
+            font-size: 25px;
+
         }
     
         .c {
             position: relative;
             top: 0px;
-
+            font-size: 10px;
+            width: 300px;
         }
 }
 /* small screen */
