@@ -367,7 +367,13 @@ footer {
 
 
 @media screen and (max-height: 350px) {
-    
+
+    #head{
+        
+        position:relative;
+       
+    }
+
     .land {
 
             height: 90vh;
