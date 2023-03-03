@@ -20,7 +20,7 @@
     --black:#0f0f0f;
 }
 body {
-        background-color:var(--black);
+        background-color:white;
         font-family: 'Aboreto', cursive;
         
 }
@@ -170,6 +170,50 @@ button {
     
 }
 
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: auto;
+    
+    padding: 30px 10px;
+
+}
+
+.item {
+    border-radius: 10px;
+    border: 10px solid black;
+    font-size: 20px;
+}
+
+.item img {
+    width: 100%;
+    height: fit-content;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quantity {
+    font-size: 16px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    gap: 10px;
+}
+
 
 footer {
     background-color: var(--black);
@@ -177,10 +221,11 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    
     border-top: solid 2px var(--primary-100);
 
 }
+
 
 
 @media screen and (min-width: 1440px){
@@ -290,6 +335,9 @@ footer {
         top: 100px;
     }
 
+    .shop {
+        grid-template-columns: repeat(3,1fr);
+    }
 
 }
 
@@ -334,6 +382,10 @@ footer {
         font-size: 15px;
         top: 150px;
         width: 300px;
+    }
+
+    .shop {
+        grid-template-columns: repeat(3,1fr);
     }
 
 }
@@ -382,65 +434,13 @@ footer {
         width: 200px;
     }
 
-}
-
-@media screen and (max-height: 350px) {
-
-
-    .land {
-
-            height: 100vh;
-            background-color: #0f0f0f;
-        }
-
-    .rightmain {
-        background-image: url(images/shop2.jpg);
-        background-size: cover;
-        background-position:0 -30px;
-        background-repeat: no-repeat;
-        background-color: #F2FFF9;
-        position: absolute;
-        left: 50%;
-        top: 2rem;
-        width: 40%;
-        height: 70%;
-        clip-path:none;
+    .shop {
+        grid-template-columns: repeat(2,1fr);
     }
 
-        .textmain {
-            color: var(--primary-100);
-            position: absolute;
-            top: 35%;
-            left: 0%;
- 
-        }
-    
-        h1,
-        h3 {
-            padding-left: 20px;
-        }
-    
-        .a {
-            position: relative;
-            top: 0px;
-            font-size: 30px;
-        }
-    
-        .b {
-            position: relative;
-            top: 0px;
-            font-size: 25px;
-
-        }
-    
-        .c {
-            position: relative;
-            top: 0px;
-            font-size: 10px;
-            width: 300px;
-        }
 }
-/* small screen */
+
+
 
 @media screen and (max-width: 450px) {
     body {
@@ -571,6 +571,10 @@ footer {
         all: unset;
     }
 
+    .shop {
+        grid-template-columns: repeat(1,1fr);
+    }
+
  
 
     footer {
@@ -611,6 +615,67 @@ footer {
     }
 }
 
+@media screen and (max-height: 350px) {
 
 
+    .land {
+
+        height: 100vh;
+        background-color: #0f0f0f;
+    }
+
+    .rightmain {
+        background-image: url(images/shop2.jpg);
+        background-size: cover;
+        background-position: 0 -30px;
+        background-repeat: no-repeat;
+        background-color: #F2FFF9;
+        position: absolute;
+        left: 50%;
+        top: 2rem;
+        width: 40%;
+        height: 70%;
+        clip-path: none;
+    }
+
+    .textmain {
+        color: var(--primary-100);
+        position: absolute;
+        top: 35%;
+        left: 0%;
+
+    }
+
+    h1,
+    h3 {
+        padding-left: 20px;
+    }
+
+    .a {
+        position: relative;
+        top: 0px;
+        font-size: 30px;
+    }
+
+    .b {
+        position: relative;
+        top: 0px;
+        font-size: 25px;
+
+    }
+
+    .c {
+        position: relative;
+        top: 0px;
+        font-size: 10px;
+        width: 300px;
+    }
+}
+
+/* small screen */
+
+@media screen and (max-height: 250px) {
+
+
+}
 
