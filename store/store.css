@@ -53,11 +53,31 @@ body {
     font-weight: bolder;
     font-size: xx-large;
 }
-
-#cart {
-    position: relative;
-    right: 20px;
+.cart {
+    margin: 10px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 20%;
+    padding: 10px;
 }
+.cart :hover {
+    cursor: pointer;
+    color: var(--primary-800);
+    transition: all 0.2s;
+}
+.cartamount {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    border-radius: 20%;
+    font-size: 22px;
+    padding-left: 3px;
+    background-color: var(--primary-800);
+    color: white;
+}
+
 .links {
     display: flex;
     gap: 20px;
@@ -363,8 +383,6 @@ footer {
     }
 
 }
-
-
 
 @media screen and (max-height: 350px) {
 
