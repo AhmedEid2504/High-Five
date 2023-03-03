@@ -2,6 +2,33 @@ const open = document.getElementById ('open');
 const close = document.getElementById ('close');
 const active = document.querySelector ('.active');
 const shop = document.getElementById ('shop');
+const cartBtn = document.getElementById ('cart-btn');
+const cartOverlay = document.querySelector(".cart-overlay");
+const cart = document.querySelector(".cart");
+const closeCart = document.querySelector(".close-cart")
+
+cartBtn.addEventListener('click', () =>{
+    if (
+        cartOverlay.classList.contains("transparentBcg"),
+        cart.classList.contains("showCart")
+        ){hideCart();}else {showCart();}
+});
+
+closeCart.addEventListener('click', () => {
+    hideCart();
+})
+
+showCart = () =>  {
+    cartOverlay.classList.add("transparentBcg");
+    cart.classList.add("showCart");
+};
+
+hideCart = () =>  {
+    cartOverlay.classList.remove("transparentBcg");
+    cart.classList.remove("showCart");
+}
+
+
 
 open.addEventListener('click', () => {
     if (open.classList.contains('fa-bars')) {
@@ -124,5 +151,7 @@ let calculation = ()=> {
     cartamount.innerHTML = basket.map((x) => x.item ).reduce((x,y) => x+y,0 );
 }
 
-calculation();
 
+
+
+calculation();
