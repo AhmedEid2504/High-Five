@@ -45,7 +45,7 @@ body {
     letter-spacing: 0.3em;
     color: var(--primary-100);
     z-index: 4;
-    }
+}
 
 .logo a{
     padding-left: 40px;
@@ -69,7 +69,7 @@ body {
 }
 .cartamount {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 9px;
     border-radius: 20%;
     font-size: 22px;
@@ -77,6 +77,15 @@ body {
     background-color: var(--primary-800);
     color: white;
 }
+i {
+    cursor: pointer;
+}
+/* .fa-plus i :hover {
+    color: var(--primary-600);
+}
+.fa-minus i :hover{
+    color: red;
+} */
 
 .links {
     display: flex;
@@ -156,14 +165,9 @@ a:active {
     top: 150px;
 }
 
-
-
 #open {
     display: none;
 }
-
-
-
 
 button {
     all: unset;
@@ -176,9 +180,7 @@ button {
     gap: 20px;
     justify-content: center;
     padding: auto;
-    
     padding: 30px 10px;
-
 }
 
 .item {
@@ -189,7 +191,7 @@ button {
 
 .item img {
     width: 100%;
-    height: fit-content;
+    height: 150px;
 }
 
 .details {
@@ -221,7 +223,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    padding: 20px;
     border-top: solid 2px var(--primary-100);
 
 }
@@ -435,12 +437,14 @@ footer {
     }
 
     .shop {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,200px);
     }
 
+    .item img {
+        width: 100%;
+        height: 130px;
+    }
 }
-
-
 
 @media screen and (max-width: 450px) {
     body {
@@ -452,7 +456,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: sticky;
+        position: fixed;
         width: 100%;
         height: 10vh;
         background-color: var(--black);
@@ -481,7 +485,7 @@ footer {
         background-image: url(images/shop2.jpg);
         background-size: cover;
         background-position:bottom;
-        height: 90vh;
+        height: 100vh;
     }
     .rightmain {
         display: none;
@@ -522,16 +526,14 @@ footer {
         width: 250px;
     }
 
-
-
-
     #bars {
         display: block;
     }
 
     .active {
         width: 100%;
-        position: absolute;
+        position: fixed;
+        top: 10%;
         display: flex;
         gap: 20px;
         flex-direction: column;
@@ -572,20 +574,18 @@ footer {
     }
 
     .shop {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,280px);
     }
-
- 
 
     footer {
         background-color: var(--black);
         color: var(--primary-100);
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 15px;
         border-top: solid 2px var(--primary-100);
-
+        font-size: small;
     }
 }
 
@@ -612,6 +612,17 @@ footer {
     }
     .logo a{
         font-size:small;
+    }
+    .footer {
+        font-size: smaller;
+    }
+
+    .shop {
+        grid-template-columns: repeat(1,220px);
+    }
+
+    .footer {
+        font-size: smaller; 
     }
 }
 
@@ -670,12 +681,13 @@ footer {
         font-size: 10px;
         width: 300px;
     }
+
 }
 
 /* small screen */
 
-@media screen and (max-height: 250px) {
+/* @media screen and (max-height: 250px) {
 
 
-}
+} */
 
