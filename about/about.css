@@ -34,14 +34,13 @@ body {
 }
 
 #head{
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position:relative;
+    position:fixed;
     width: 100%;
     height: 10vh;
-    background-color:var(--black);
+    background-color:rgba(0, 0, 0, 0.01);
     font-family: 'Aboreto', cursive;
     letter-spacing: 0.3em;
     color: var(--primary-100);
@@ -89,9 +88,12 @@ a:active {
 
 .land {
     width: 100%;
-    height: 850px;
-    background-color:#0f0f0f ;
-    background-size: cover;
+    height: 100vh;
+    background-color: rgba(8, 8, 8, 1);
+}
+.land video {
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -113,72 +115,20 @@ button {
     
 }
 
-.bwimg{
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bwimg img {
-    width: 100%;
-    height: 100%;
-}
-
-.buynow {
-    background-image: linear-gradient(90deg, #1f773b, #25753c);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-}
-.buybg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/gbg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 800px;
-    height: 500px;
-}
-.buybtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom:65px ;
-    left: 10px;
-    width: 470px;
-    height: 5em;
-    transition: all 0.3s;
-    font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 10px 20px 30px 10px rgba(0, 0, 0, 0.5);
-}
-.buynow a:hover {
-    background-color: rgba(29, 75, 28, 0.5);
-}
-.buynow a:visited {
-    background-color: rgba(29, 75, 28, 0.5);
-    box-shadow: 10px 20px 30px 10px rgba(0, 0, 0, 0);
-}
-
-
-
-
 footer {
     background-color: var(--black);
     color: var(--primary-100);
     display: flex;
-    justify-content: space-around;
     align-items: center;
     padding: 15px;
     border-top: solid 2px var(--primary-100);
 
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30%;
 }
 
 
@@ -332,14 +282,16 @@ footer {
         font-size: x-large;
     }
 
-    .land {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 90vh;
-        background-color: #0f0f0f;
-        background-size: cover;
-    }
+.land {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(8, 8, 8, 1);
+}
+
+.land video {
+    width: 100%;
+    height: 100vh;
+}
 
     .part {
         width: 100%;
@@ -647,46 +599,6 @@ footer {
 }
 
 @media screen and (max-width: 350px) {
-    .trendslogo a{
-        font-size: small;
-    }
-    .trendsmidlogo {
-        font-size: x-small;
-    }
-    .trendname {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            position: absolute;
-            z-index: 4;
-            top: 40%;
-            left: 80px;
-            letter-spacing: 4em;
-            color: var(--primary-100);
-            transition: 0.3s linear;
-            transform: translateY(0px);
-            font-size: x-small;
-        }
-        .B {
-            top: 60%;
-            left: 5%;
-        }
-    
-        #sunn {
-            position: absolute;
-            top: 28px;
-        }
-        .s {
-            top: 60%;
-            left: 60px;
-        }
-    
-        #chr {
-            position: absolute;
-            top: 1.8em;
-            left: 1.7em;
-        }
 }
 
 
