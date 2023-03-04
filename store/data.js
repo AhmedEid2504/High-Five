@@ -1,27 +1,75 @@
 let shopItemsData = [
     {
         id:"hat1",
-        name:"casual hat1",
-        price: 45,
-        desc: "lorem imflsdajh alkhfd iljfldaj kjalk;fdj",
+        name:"Purble Bucket",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
         img: "dataimages/hat1.jpg"
     },{
         id:"hat2",
-        name:"casual hat2",
-        price: 70,
-        desc: "lorem imflsdajh alkhfd iljfldaj kjalk;fdj",
+        name:"Summer Straw",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
         img: "dataimages/hat2.jpg"
     },{
         id:"hat3",
-        name:"casual hat3",
-        price: 80,
-        desc: "lorem imflsdajh alkhfd iljfldaj kjalk;fdj",
+        name:"Wool winter",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
         img: "dataimages/hat3.jpg"
     },{
         id:"hat4",
-        name:"casual hat4",
-        price: 20,
-        desc: "lorem imflsdajh alkhfd iljfldaj kjalk;fdj",
+        name:"Wool Collection",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
         img: "dataimages/hat4.jpg"
+    },{
+        id:"hat5",
+        name:"paige bucket",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
+        img: "dataimages/hat5.jpg"
+    },{
+        id:"hat6",
+        name:"black bucket",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
+        img: "dataimages/hat6.jpg"
+    },{
+        id:"hat7",
+        name:"black cap",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
+        img: "dataimages/hat7.jpg"
+    },{
+        id:"hat8",
+        name:"bink cap",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
+        img: "dataimages/hat8.jpg"
+    },{
+        id:"hat9",
+        name:"jeans hat",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
+        img: "dataimages/hat9.jpg"
+    },{
+        id:"hat10",
+        name:"Bink Bucket",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
+        img: "dataimages/hat10.jpg"
+    },{
+        id:"hat11",
+        name:"Straw Beach",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
+        img: "dataimages/hat11.jpg"
+    },{
+        id:"hat12",
+        name:"Red Wool cap",
+        price: Math.floor(Math.random()*101),
+        desc: `Lorem ipsum dolor sit amet, consectetur.`,
+        img: "dataimages/hat12.jpg"
     }
 ];

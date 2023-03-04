@@ -81,12 +81,6 @@ body {
 i {
     cursor: pointer;
 }
-/* .fa-plus i :hover {
-    color: var(--primary-600);
-}
-.fa-minus i :hover{
-    color: red;
-} */
 
 .links {
     display: flex;
@@ -244,11 +238,12 @@ button {
 
 .cart-item h4 {
     font-size: 0.85rem;
-    text-transform: capitalize;
+    text-transform:uppercase;
 }
 
 .cart-item h5 {
     margin: 0.5rem 0;
+    text-transform: uppercase;
 }
 
 .item-amount {
@@ -304,7 +299,8 @@ button {
 
 .shop {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,200px);
+    font-family: Arial, Helvetica, sans-serif;
     gap: 20px;
     justify-content: center;
     padding: auto;
@@ -312,6 +308,10 @@ button {
 }
 
 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     border: 10px solid black;
     font-size: 20px;
@@ -319,7 +319,7 @@ button {
 
 .item img {
     width: 100%;
-    height: 150px;
+    height: max-content;
 }
 
 .details {
@@ -570,7 +570,7 @@ footer {
 
     .item img {
         width: 100%;
-        height: 130px;
+        height: fit-content;
     }
 }
 
