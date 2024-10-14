@@ -91,6 +91,7 @@ a:active {
     height: 100vh;
     background-color: var(--primary-900);
     background-size: cover;
+    background-position: center;
 }
 
 .landimg img {
