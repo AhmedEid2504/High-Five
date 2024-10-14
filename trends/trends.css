@@ -52,7 +52,6 @@ body {
     padding-left: 40px;
     letter-spacing: 0.4em;
     font-weight: bolder;
-    font-size: xx-large;
 }
 .links {
     display: flex;
@@ -60,7 +59,7 @@ body {
     padding: 15px;
 }
 a {
-    font-size: x-large;
+    font-size: large;
 }
 
 a:link {

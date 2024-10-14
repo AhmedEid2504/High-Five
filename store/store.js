@@ -61,7 +61,7 @@ let genereateShop = ()=>{
             <div class="details">
                 <h3>${name}</h3><h5>${desc}</h5>
                 <div class="price-quantity">
-                    <h2>$ ${price}</h2>
+                    <h2><span class="dollar">$</span> ${price}</h2>
                     <div class="buttons">
                         <i onclick="decrement(${id})" class="fas fa-2x fa-minus"></i>
                         <div id="${id}" class="quantity">${search.item === undefined? 0: search.item}</div>
