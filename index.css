@@ -16,7 +16,7 @@
     --primary-600: #069526;
     --primary-700: #017014;
     --primary-800: #004B08;
-    --primary-900: rgb(0, 38, 2);
+    --primary-900: rgb(2, 27, 3);
 }
 body {
         background-color: var(--primary-100);
@@ -38,7 +38,7 @@ body {
         position:fixed;
         width: 100vw;
         height: 10vh;
-        background-color:rgba(0, 38, 2, 0.3);
+        background-color:#0d0d0d;
         font-family: 'Aboreto', cursive;
         letter-spacing: 0.3em;
         padding: 10px;
@@ -312,7 +312,9 @@ footer {
     
 
     .landimg {
-        background-image: none;
+        background-image: url(images/mainbgs.jpeg);
+        background-position: center;
+        background-size: cover;
         width: 100vw;
         height: 90vh;
         background-color: var(--primary-900);
