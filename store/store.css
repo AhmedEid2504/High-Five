@@ -129,11 +129,10 @@ a:active {
     overflow: hidden;
     background-color: #F2FFF9;
     position: absolute;
-    left: 40%;
+    left: 45%;
     top: 4rem;
     width: 50%;
     height: 80vh;
-    clip-path: polygon(20% 23%, 80% 10%, 100% 90%, 40% 100%);
 }
 
 .textmain {
